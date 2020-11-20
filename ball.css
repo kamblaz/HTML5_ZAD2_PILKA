@@ -1,7 +1,7 @@
 .ballContainer {
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: -10%;
 }
 
 .grass {
@@ -31,10 +31,10 @@ button {
 }
 
 .bounce-ball {
-    left: 10%;
+    left: -10%;
     position: absolute;
     top: 20%;
-    animation: bounce 3s, move 3s; 
+    animation: bounce 3s infinite, move 3s infinite; 
     /*-webkit-animation: bounce 20s linear forwards;*/
     /* Chrome, Safari 5 */
     /*-moz-animation: bounce 20s linear forwards;*/
@@ -46,17 +46,23 @@ button {
 }
 
 @keyframes bounce {
+    0% {
+        top: 20%;
+    }
     100% {
-        left:80%;
+        top: 90%;
     }
 }
 
 @keyframes move {
+    0% {
+       left: -10%;
+    }
     50% {
-        bottom: 20%;
+        left: 50%;
     }
     100% {
-        bottom: 0;
+        left: -10%;
     }
 }
 
