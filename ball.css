@@ -1,7 +1,7 @@
 .ballContainer {
     position: absolute;
-    top: 20%;
-    left: -10%;
+    top: 20vh;
+    left: -10vw;
 }
 
 .grass {
@@ -31,10 +31,10 @@ button {
 }
 
 .bounce-ball {
-    left: -10%;
+    left: -10vw;
     position: absolute;
-    top: 20%;
-    -webkit-animation: bounce 5s linear alternate forwards, move 5s linear alternate forwards; 
+    top: 20vh;
+    -webkit-animation: bounce 10s linear alternate infinite, move 10s linear alternate infinite; 
     /*-webkit-animation: bounce 20s linear forwards;*/
     /* Chrome, Safari 5 */
     /*-moz-animation: bounce 20s linear forwards;*/
@@ -45,42 +45,33 @@ button {
     /* Chrome, Firefox 16+, IE 10+, Safari 5 */
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
     0%   {transform: translateY(0vh) ;}
-    12%  {transform: translateY(20vh) ;}
-    24% {transform: translateY(60vh);}
-    36%   {transform: translateY(0vh) ;}
-    48%  {transform: translateY(20vh) ;}
-    60% {transform: translateY(60vh);}
-    72%   {transform: translateY(0vh) ;}
-    84%  {transform: translateY(20vh) ;}
+    20%  {transform: translateY(20vh) ;}
+    40% {transform: translateY(60vh);}
+    60%   {transform: translateY(0vh) ;}
+    80%  {transform: translateY(20vh) ;}
     100% {transform: translateY(60vh);}
 }
 
-@keyframes move {
+@-webkit-keyframes move {
     0% {
         left: -10vw;
     }
-    15% {
-        left: 30vw;
+    20% {
+        left: 10vw;
     }
-    30% {
-        left: 50vw;
+    40% {
+        left: 40vw;
     }
-    45% {
-        left: 70vw;
+    65% {
+        left: 60vw;
     }
-    60% {
-        left: 90vw;
-    }
-    75% {
-        left: 110vw;
-    }
-    90% {
-        left: 130vw;
+    80% {
+        left: 80vw;
     }
     100% {
-        left: 150vw;
+        left: 90vw;
     }
 }
 
