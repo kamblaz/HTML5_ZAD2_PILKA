@@ -47,10 +47,14 @@ button {
 
 @-webkit-keyframes bounce {
     0%   {transform: translateY(0vh) ;}
-    20%  {transform: translateY(20vh) ;}
-    40% {transform: translateY(60vh);}
-    60%   {transform: translateY(0vh) ;}
-    80%  {transform: translateY(20vh) ;}
+    10%  {transform: translateY(15vh) ;}
+    20% {transform: translateY(30vh);}
+    30%   {transform: translateY(45vh) ;}
+    40%  {transform: translateY(60vh) ;}
+    50%   {transform: translateY(0vh) ;}
+    60%  {transform: translateY(15vh) ;}
+    70% {transform: translateY(30vh);}
+    80%   {transform: translateY(45vh) ;}
     100% {transform: translateY(60vh);}
 }
 
@@ -58,17 +62,32 @@ button {
     0% {
         left: -10vw;
     }
+    10% {
+        left: 0vw;
+    }
     20% {
         left: 10vw;
+    }
+    30% {
+        left: 25vw;
     }
     40% {
         left: 40vw;
     }
-    65% {
+    50% {
+        left: 50vw;
+    }
+    60% {
         left: 60vw;
+    }
+    70% {
+        left: 70vw;
     }
     80% {
         left: 80vw;
+    }
+    90% {
+        left: 85vw;
     }
     100% {
         left: 90vw;
