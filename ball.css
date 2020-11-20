@@ -34,7 +34,7 @@ button {
     left: -10%;
     position: absolute;
     top: 20%;
-    animation: bounce 3s infinite, move 3s infinite; 
+    animation: bounce 3s, move 3s; 
     /*-webkit-animation: bounce 20s linear forwards;*/
     /* Chrome, Safari 5 */
     /*-moz-animation: bounce 20s linear forwards;*/
@@ -47,22 +47,22 @@ button {
 
 @keyframes bounce {
     0% {
-        top: 20%;
+        transform: translateY(20%);
+    }
+    50% {
+        transform: translateY(50%);
     }
     100% {
-        top: 90%;
+        transform: translateY(90%);
     }
 }
 
 @keyframes move {
     0% {
-       left: -10%;
-    }
-    50% {
-        left: 50%;
+       transform: translateX(10%);
     }
     100% {
-        left: -10%;
+        transform: translateX(90%);
     }
 }
 
