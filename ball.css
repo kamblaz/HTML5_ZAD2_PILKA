@@ -1,7 +1,7 @@
 .ballContainer {
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 20%;
+    left: -10%;
 }
 
 .grass {
@@ -30,21 +30,21 @@ button {
     position: relative;
 }
 
-.test {
+.bounce {
     left: 510px;
     position: absolute;
     top: 400px;
-    -webkit-animation: test 20s linear forwards;
+    -webkit-animation: bounce 20s linear forwards;
     /* Chrome, Safari 5 */
-    -moz-animation: test 20s linear forwards;
+    /*-moz-animation: bounce 20s linear forwards;*/
     /* Firefox 5-15 */
-    -o-animation: test 20s linear forwards;
+    /*-o-animation: bounce 20s linear forwards;*/
     /* Opera 12+ */
-    animation: test 20s linear forwards;
+    /*animation: bounce 20s linear forwards;*/
     /* Chrome, Firefox 16+, IE 10+, Safari 5 */
 }
 
-@-webkit-keyframes test {
+@-webkit-keyframes bounce {
     0% {
         -webkit-transform: rotate(0deg) scale(1) translate(-520px, -410px) rotate(0deg);
     }
