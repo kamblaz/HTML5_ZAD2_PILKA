@@ -42,16 +42,10 @@ button {
 }
 
 @-webkit-keyframes bounce {
-    0%   { -webkit-transform: translateY(0vh) ;}
-    10%  { -webkit-transform: translateY(15vh) ;}
-    20% { -webkit-transform: translateY(30vh);}
-    30%   { -webkit-transform: translateY(45vh) ;}
-    40%  { -webkit-transform: translateY(60vh) ;}
-    50%   { -webkit-transform: translateY(0vh) ;}
-    60%  { -webkit-transform: translateY(15vh) ;}
-    70% { -webkit-transform: translateY(30vh);}
-    80%   { -webkit-transform: translateY(45vh) ;}
-    100% { -webkit-transform: translateY(60vh);}
+    0%   { -webkit-transform: translateY(0%) ;}
+    25%  { -webkit-transform: translateY(0%) ;}
+    50% { -webkit-transform: translateY(0%);}
+    100% { -webkit-transform: translateY(0%);}
 }
 
 @-webkit-keyframes move {
