@@ -35,24 +35,24 @@ button {
     left: -10vw;
     position: absolute;
     bottom: 10vh;
-    animation: bounce 1s alternate infinite, move 10s alternate infinite; 
+    animation: bounce 2s alternate infinite, move 10s alternate infinite; 
 }
 
 @keyframes bounce {
     0%  {   transform: translateY(0vh) ;
             animation-timing-function: linear;
         }
-    25% {   transform: translateY(-10vh) ;
+    25% {   transform: translateY(-20vh) ;
             animation-timing-function: linear;
         }
-    50% {    transform: translateY(-20vh) ;
+    50% {    transform: translateY(-40vh) ;
             animation-timing-function: linear;
         }
-    75% {   transform: translateY(-30vh) ;
+    75% {   transform: translateY(-20vh) ;
             animation-timing-function: linear;
         }
-    100% {  transform: translateY(-40vh);
-            animation-timing-function: ease;
+    100% {  transform: translateY(0vh);
+            animation-timing-function: linear;
         }
 }
 
