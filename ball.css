@@ -1,7 +1,7 @@
 .ballContainer {
     position: absolute;
-    top: 20vh;
-    left: -10vw;
+    top: 20%;
+    left: 10%;
 }
 
 .grass {
@@ -32,167 +32,20 @@ button {
 }
 
 .bounce-ball {
-    left: -10vw;
+    left: 10%;
     position: absolute;
-    top: 20vh;
-    -webkit-animation: bounce 5s linear alternate infinite, move 5s linear alternate infinite; 
-    -moz-animation: bounce 5s linear alternate infinite, move 5s linear alternate infinite; 
-    -o-animation: bounce 5s linear alternate infinite, move 5s linear alternate infinite; 
-    animation: bounce 5s linear alternate infinite, move 5s linear alternate infinite; 
+    bottom: 10%;
+    animation: bounce 0.5s ease-out alternate infinite;/*, move 5s linear alternate infinite; */
 }
 
 @-webkit-keyframes bounce {
-    0%   { -webkit-transform: translateY(0%) ;}
-    25%  { -webkit-transform: translateY(0%) ;}
-    50% { -webkit-transform: translateY(0%);}
-    100% { -webkit-transform: translateY(0%);}
+    0%   { transform: translateY(0vw) ;}
+    25%  { transform: translateY(-10vw) ;}
+    50% { transform: translateY(-20vw);}
+    100% { transform: translateY(-30vw);}
 }
 
 @-webkit-keyframes move {
-    0% {
-        left: -10vw;
-    }
-    10% {
-        left: 0vw;
-    }
-    20% {
-        left: 10vw;
-    }
-    30% {
-        left: 25vw;
-    }
-    40% {
-        left: 40vw;
-    }
-    50% {
-        left: 50vw;
-    }
-    60% {
-        left: 60vw;
-    }
-    70% {
-        left: 70vw;
-    }
-    80% {
-        left: 80vw;
-    }
-    90% {
-        left: 85vw;
-    }
-    100% {
-        left: 90vw;
-    }
-}
-@-moz-keyframes bounce {
-    0%   { -moz-transform: translateY(0vh) ;}
-    10%  { -moz-transform: translateY(15vh) ;}
-    20% { -moz-transform: translateY(30vh);}
-    30%   { -moz-transform: translateY(45vh) ;}
-    40%  { -moz-transform: translateY(60vh) ;}
-    50%   { -moz-transform: translateY(0vh) ;}
-    60%  { -moz-transform: translateY(15vh) ;}
-    70% { -moz-transform: translateY(30vh);}
-    80%   { -moz-transform: translateY(45vh) ;}
-    100% { -moz-transform: translateY(60vh);}
-}
-
-@-moz-keyframes move {
-    0% {
-        left: -10vw;
-    }
-    10% {
-        left: 0vw;
-    }
-    20% {
-        left: 10vw;
-    }
-    30% {
-        left: 25vw;
-    }
-    40% {
-        left: 40vw;
-    }
-    50% {
-        left: 50vw;
-    }
-    60% {
-        left: 60vw;
-    }
-    70% {
-        left: 70vw;
-    }
-    80% {
-        left: 80vw;
-    }
-    90% {
-        left: 85vw;
-    }
-    100% {
-        left: 90vw;
-    }
-}
-@-o-keyframes bounce {
-    0%   { -o-transform: translateY(0vh) ;}
-    10%  { -o-transform: translateY(15vh) ;}
-    20% { -o-transform: translateY(30vh);}
-    30%   { -o-transform: translateY(45vh) ;}
-    40%  { -o-transform: translateY(60vh) ;}
-    50%   { -o-transform: translateY(0vh) ;}
-    60%  { -o-transform: translateY(15vh) ;}
-    70% { -o-transform: translateY(30vh);}
-    80%   { -o-transform: translateY(45vh) ;}
-    100% { -o-transform: translateY(60vh);}
-}
-
-@-o-keyframes move {
-    0% {
-        left: -10vw;
-    }
-    10% {
-        left: 0vw;
-    }
-    20% {
-        left: 10vw;
-    }
-    30% {
-        left: 25vw;
-    }
-    40% {
-        left: 40vw;
-    }
-    50% {
-        left: 50vw;
-    }
-    60% {
-        left: 60vw;
-    }
-    70% {
-        left: 70vw;
-    }
-    80% {
-        left: 80vw;
-    }
-    90% {
-        left: 85vw;
-    }
-    100% {
-        left: 90vw;
-    }
-}
-@keyframes bounce {
-    0%   { transform: translateY(0vh) ;}
-    10%  { transform: translateY(15vh) ;}
-    20% { transform: translateY(30vh);}
-    30%   { transform: translateY(45vh) ;}
-    40%  { transform: translateY(60vh) ;}
-    50%   { transform: translateY(0vh) ;}
-    60%  { transform: translateY(15vh) ;}
-    70% { transform: translateY(30vh);}
-    80%   { transform: translateY(45vh) ;}
-    100% { transform: translateY(60vh);}
-}
-
-@keyframes move {
     0% {
         left: -10vw;
     }
